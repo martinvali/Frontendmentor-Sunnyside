@@ -25,6 +25,72 @@
   margin: auto;
 }
 
+.egg {
+  width: 100%;
+  height: 16rem;
+  background-image: url(../../sunnyside-agency-landing-page-main/images/mobile/image-transform.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.egg-txt {
+  box-sizing: border-box;
+  width: 100%;
+  height: 21.5rem;
+  padding-top: 3.75rem;
+}
+
+.egg-txt h1 {
+  margin: 0;
+  font-family: "Fraunces", serif;
+  max-width: 85%;
+  text-align: center;
+  margin: auto;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 1.75rem;
+  color: var(--very-dark-blue);
+}
+
+.egg-txt h2 {
+  text-align: center;
+  max-width: 95%;
+  margin: auto;
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  color: var(--dark-grayish-blue);
+  line-height: 1.75;
+  margin-bottom: 1.75rem;
+}
+
+.learn-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.learn-more a {
+  margin: auto;
+  color: var(--very-dark-blue);
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.learn-more a::before {
+  content: "";
+  position: absolute;
+  width: 8rem;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--yellow);
+  opacity: 0.3;
+  bottom: -2px;
+  z-index: -1;
+}
 @media only screen and (min-width: 640px) {
   .hero {
     box-sizing: border-box;
@@ -39,14 +105,85 @@
   .hero-txt {
     font-size: 3rem;
   }
+
+  .egg {
+    background-image: url(../../sunnyside-agency-landing-page-main/images/desktop/image-transform.jpg);
+    height: 30rem;
+  }
+
+  .egg-txt h1 {
+    font-size: 3rem;
+  }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1023px) {
+  .section1 {
+    display: flex;
+  }
+  .egg {
+    order: 1;
+    background-size: cover;
+  }
+  .egg-txt {
+    padding-top: 8rem;
+  }
+  .egg-txt h1 {
+    font-size: 2rem;
+    width: 65%;
+    text-align: left;
+    margin-left: 7rem;
+  }
+
+  .egg-txt h2 {
+    width: 70%;
+    text-align: left;
+    font-size: 0.9rem;
+    margin-left: 7rem;
+  }
+
+  .learn-more {
+    justify-content: flex-start;
+  }
+
+  .learn-more a {
+    margin-left: 7rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
   .hero-txt {
     font-size: 3.75rem;
   }
   .hero {
     background-size: 90%;
     height: 52rem;
+  }
+  .egg {
+    height: 40rem;
+  }
+
+  .egg-txt {
+    padding-top: 11rem;
+  }
+
+  .egg-txt h1 {
+    margin-left: 10rem;
+    font-size: 2.75rem;
+    width: 40%;
+    margin-bottom: 2.5rem;
+  }
+  .egg-txt h2 {
+    margin-left: 10rem;
+    font-size: 1.15rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .learn-more {
+    margin-left: 10rem;
+  }
+
+  .learn-more a {
+    margin: 0;
   }
 }
