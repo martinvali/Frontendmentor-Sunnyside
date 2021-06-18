@@ -18,7 +18,35 @@
   margin: 0;
   color: var(--white);
   font-family: "Fraunces", serif;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-align: center;
   letter-spacing: 7px;
+  max-width: 95%;
+  margin: auto;
+}
+
+@media only screen and (min-width: 640px) {
+  .hero {
+    box-sizing: border-box;
+    height: 42rem;
+    background-image: url(../../sunnyside-agency-landing-page-main/images/desktop/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-top: 7.5rem;
+  }
+
+  .hero-txt {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .hero-txt {
+    font-size: 3.75rem;
+  }
+  .hero {
+    background-size: 90%;
+    height: 52rem;
+  }
 }
