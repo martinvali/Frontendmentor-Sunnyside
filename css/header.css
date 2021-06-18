@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  height: 4.375rem;
+  background-color: var(--light-blue);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header nav {
+  width: 100%;
+}
+
+.nav-links {
+  transition: all 500ms ease-in-out;
+  padding-top: 2.8125rem;
+  padding-bottom: 2.5rem;
+  position: absolute;
+  width: 90vw;
+  top: -40%;
+  left: 1.5rem;
+  right: 1.5rem;
+  opacity: 0;
+}
+.nav-links::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 18px solid var(--white);
+  border-left: 18px solid transparent;
+  position: absolute;
+  right: 0;
+  top: -18px;
+}
+
+.nav-links-open {
+  opacity: 1;
+  position: absolute;
+  top: 5.5625rem;
+  width: calc(100vw - 2 * 1.5rem);
+  height: 15rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  background-color: var(--white);
+}
+
+.logo {
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+}
+
+.mobile-burger-menu {
+  position: absolute;
+  right: 1.5rem;
+  top: 2rem;
+}
+
+.nav-anchor {
+  box-sizing: border-box;
+
+  text-align: center;
+  display: block;
+  color: var(--dark-grayish-blue);
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.nav-anchor:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.nav-anchor:nth-of-type(3) {
+  margin-bottom: 3rem;
+}
+.nav-cta {
+  text-align: center;
+  display: inline-block;
+  color: var(--very-dark-blue);
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  position: relative;
+  z-index: 5;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.nav-cta::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+
+  display: block;
+  background-color: var(--yellow);
+  background-position: center center;
+  width: 8.75rem;
+  height: 3.5rem;
+  border-radius: 2rem;
+}
