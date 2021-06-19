@@ -108,6 +108,53 @@
   background-color: var(--soft-red);
 }
 
+.cherries,
+.oranges {
+  width: 100%;
+  height: 38rem;
+}
+
+.cherries {
+  background-image: url(../../sunnyside-agency-landing-page-main/images/mobile/image-graphic-design.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.oranges {
+  background-image: url(../../sunnyside-agency-landing-page-main/images/mobile/image-photography.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.fruit-heading h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-align: center;
+  color: var(--dark-cyan);
+  margin-bottom: 1.75rem;
+}
+
+.fruit-txt {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  line-height: 1.5;
+  color: var(--dark-cyan);
+}
+.oranges .fruit-heading h2 {
+  color: var(--dark-blue);
+}
+.oranges .fruit-txt p {
+  color: var(--dark-blue);
+}
+
+.cherries,
+.oranges {
+  box-sizing: border-box;
+  padding-top: 26rem;
+}
 @media only screen and (min-width: 640px) {
   .hero {
     box-sizing: border-box;
@@ -136,6 +183,21 @@
   .egg-txt h1,
   .red-txt h1 {
     font-size: 3rem;
+  }
+
+  .cherries {
+    background-image: url(../../sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg);
+  }
+
+  .oranges {
+    background-image: url(../../sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg);
+  }
+
+  .fruit-heading h2 {
+    font-size: 2.5rem;
+  }
+  .fruit-txt p {
+    font-size: 1rem;
   }
 }
 
@@ -191,6 +253,26 @@
   .section2 {
     display: flex;
   }
+
+  .fruits {
+    display: flex;
+  }
+
+  .oranges,
+  .cherries {
+    height: 30rem;
+    padding-top: 19rem;
+  }
+
+  .fruit-heading h2 {
+    font-size: 1.75rem;
+  }
+
+  .fruit-txt p {
+    font-size: 0.9rem;
+    width: 50%;
+    margin: auto;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -202,25 +284,29 @@
     height: 52rem;
   }
   .egg {
-    height: 40rem;
+    height: 50rem;
   }
 
   .egg-txt,
   .red-txt {
-    padding-top: 11rem;
+    padding-top: 15rem;
   }
 
   .egg-txt h1,
   .red-txt h1 {
     margin-left: 10rem;
-    font-size: 2.75rem;
-    width: 40%;
+    font-size: 3rem;
+    width: 50%;
     margin-bottom: 2.5rem;
+  }
+
+  .red-txt h1 {
+    width: 60%;
   }
   .egg-txt h2,
   .red-txt h2 {
     margin-left: 10rem;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     margin-bottom: 3.5rem;
   }
 
@@ -233,6 +319,22 @@
   }
 
   .red {
-    height: 40rem;
+    height: 50rem;
+  }
+
+  .oranges,
+  .cherries {
+    height: 50rem;
+    padding-top: 35rem;
+  }
+
+  .fruit-heading h2 {
+    font-size: 2.25rem;
+  }
+
+  .fruit-txt p {
+    font-size: 1.25rem;
+    width: 50%;
+    margin: auto;
   }
 }
