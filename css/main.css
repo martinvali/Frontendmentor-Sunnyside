@@ -210,6 +210,39 @@
   color: var(--grayish-blue);
   margin-bottom: 3.5rem;
 }
+
+.end-images {
+  display: flex;
+  height: 25rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.img1 {
+  background-image: url(../../sunnyside-agency-landing-page-main/images/mobile/image-gallery-milkbottles.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 50%;
+}
+
+.img2 {
+  background-image: url(../../sunnyside-agency-landing-page-main/images/mobile/image-gallery-orange.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 50%;
+}
+.img3 {
+  background-image: url(../../sunnyside-agency-landing-page-main/images/mobile/image-gallery-cone.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 50%;
+}
+.img4 {
+  background-image: url(../../sunnyside-agency-landing-page-main/images/mobile/image-gallery-sugar-cubes.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 50%;
+}
 @media only screen and (min-width: 640px) {
   .hero {
     box-sizing: border-box;
@@ -253,6 +286,38 @@
   }
   .fruit-txt p {
     font-size: 1rem;
+  }
+  .end-images {
+    height: 15rem;
+    width: 100%;
+  }
+  .img1 {
+    background-image: url(../../sunnyside-agency-landing-page-main/images/desktop/image-gallery-milkbottles.jpg);
+    width: 25%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+  .img2 {
+    background-image: url(../../sunnyside-agency-landing-page-main/images/desktop/image-gallery-orange.jpg);
+    width: 25%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+  .img3 {
+    background-image: url(../../sunnyside-agency-landing-page-main/images/desktop/image-gallery-cone.jpg);
+    width: 25%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+  .img4 {
+    background-image: url(../../sunnyside-agency-landing-page-main/images/desktop/image-gallery-sugarcubes.jpg);
+    width: 25%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
   }
 }
 
@@ -330,6 +395,7 @@
   }
   .testimonials {
     padding-top: 8rem;
+    padding-bottom: 4rem;
   }
   .testimonials-container {
     display: flex;
@@ -342,6 +408,9 @@
   .testimonial-txt {
     width: 100%;
     font-size: 1rem;
+  }
+  .end-images {
+    height: 18rem;
   }
 }
 
@@ -409,6 +478,7 @@
   }
   .testimonials-container {
     justify-content: center;
+    padding-bottom: 3rem;
   }
   .testimonials-heading {
     font-size: 1.5rem;
@@ -423,5 +493,9 @@
   }
   .job {
     font-size: 0.9rem;
+  }
+
+  .end-images {
+    height: 34rem;
   }
 }
