@@ -79,7 +79,6 @@
 .learn-more {
   width: 100%;
   display: flex;
-  justify-content: center;
   margin-bottom: 3rem;
 }
 
@@ -96,7 +95,7 @@
 .learn-more a::before {
   content: "";
   position: absolute;
-  width: 8rem;
+  width: 7.5rem;
   height: 0.5rem;
   border-radius: 1rem;
   background-color: var(--yellow);
@@ -148,30 +147,49 @@
     order: 1;
     background-size: cover;
   }
-  .egg-txt {
+  .egg-txt,
+  .red-txt {
     padding-top: 8rem;
   }
-  .egg-txt h1 {
+  .egg-txt h1,
+  .red-txt h1 {
     font-size: 2rem;
     width: 65%;
     text-align: left;
     margin-left: 7rem;
   }
 
-  .egg-txt h2 {
+  .egg-txt h2,
+  .red-txt h2 {
     width: 70%;
     text-align: left;
     font-size: 0.9rem;
     margin-left: 7rem;
   }
+  .red-txt h1,
+  .red-txt h2 {
+    margin-left: 5rem;
+  }
+  .red-text h1 {
+    width: 100%;
+  }
 
-  .learn-more {
+  .learn-more,
+  .learn-more2 {
     justify-content: flex-start;
   }
 
   .learn-more a {
     margin-left: 7rem;
     font-size: 0.9rem;
+  }
+  .learn-more2 a {
+    margin-left: 5rem;
+    font-size: 0.9rem;
+  }
+
+  .section2 {
+    display: flex;
   }
 }
 
@@ -187,17 +205,20 @@
     height: 40rem;
   }
 
-  .egg-txt {
+  .egg-txt,
+  .red-txt {
     padding-top: 11rem;
   }
 
-  .egg-txt h1 {
+  .egg-txt h1,
+  .red-txt h1 {
     margin-left: 10rem;
     font-size: 2.75rem;
     width: 40%;
     margin-bottom: 2.5rem;
   }
-  .egg-txt h2 {
+  .egg-txt h2,
+  .red-txt h2 {
     margin-left: 10rem;
     font-size: 1.15rem;
     margin-bottom: 3.5rem;
